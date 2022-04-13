@@ -1,32 +1,57 @@
-# Prerequisites
-*.d
+*
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+!C
+!C/**
 
-# Precompiled Headers
-*.gch
-*.pch
+!cmake
+!cmake/**
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+!CSharp
+!CSharp/**
+CSharp/bin
+CSharp/obj
 
-# Fortran module files
-*.mod
-*.smod
+!csharp_example
+!csharp_example/**
+csharp_example/bin
+csharp_example/obj
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+!doc
+!doc/**
 
-# Executables
-*.exe
-*.out
-*.app
+!example
+!example/**
+
+!data
+!data/**
+
+!model
+!model/**
+
+!include
+!include/**
+
+!python
+!python/**
+
+!scripts
+!scripts/**
+
+!src
+!src/**
+
+!tests
+!tests/**
+
+
+!tutorial
+!tutorial/**
+
+!.gitignore
+!.gitmodules
+!.drone.yml
+!.clang-format
+!CMakeLists.txt
+!Config.cmake.in
+!README.md
+!History.md
