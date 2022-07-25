@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(json-demo)
+project(callback-demo)
 
 add_compile_options("$<$<COMPILE_LANG_AND_ID:CXX,MSVC>:/utf-8>")
 
@@ -16,5 +16,10 @@ set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../)
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 include(fetch/opencv)
 include(fetch/json)
+
+find_package(OpenMP)
+if(OpenMP_CXX_FOUND)
+    message(STATUS "OPENMP found")
+endif()
 
 add_subdirectory(example)
